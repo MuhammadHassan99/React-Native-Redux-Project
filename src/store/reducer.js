@@ -20,7 +20,6 @@ export const userReducer = (state = initialState, action) => {
       };
 
     case USER_FAILED:
-      return console.log(action.payload);
     case DELETE_USER:
       const updatedData = state.data.filter(res => res.id !== action.payload);
       return {
