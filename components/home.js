@@ -31,6 +31,7 @@ const Home = ({user, getUser, deleteUser, loader, isLoading}) => {
               <Text style={styles.text}>USERS</Text>
               <View style={styles.list}>
                 <FlatList
+                  showsVerticalScrollIndicator={false}
                   data={user}
                   keyExtractor={item => item.id}
                   removeClippedSubviews={false}
@@ -88,7 +89,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    marginLeft: '43%',
+    marginLeft: '44%',
     marginBottom: 30,
   },
 });
